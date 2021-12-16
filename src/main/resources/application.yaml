@@ -1,0 +1,12 @@
+
+server:
+  address: localhost
+  port: 4444
+  compression:
+    enabled: true
+  http2:
+    enabled: true
+
+  error:
+    whitelabel:
+      enabled: false
