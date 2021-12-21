@@ -5,7 +5,7 @@ metadata:
   labels:
     svc: test10_admin
     name: test10_admin
-    namespace: test10_admin
+#    namespace: test10_admin
 spec:
   type: NodePort
   ports:
