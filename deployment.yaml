@@ -3,8 +3,8 @@
 #kind: Service
 #metadata:
 #  labels:
-#    svc: test10_admin
-#    name: test10_admin
+#    svc: test10admin
+#    name: test10admin
 #    namespace: test10-ns
 #spec:
 #  type: NodePort
@@ -15,28 +15,28 @@
 #      protocol: TCP
 #      targetPort: 4444
 #  selector:
-#    app: test10_admin
+#    app: test10admin
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test10_admin
+  name: test10admin
   namespace: test10-ns
   labels:
-    app: test10_admin
+    app: test10admin
 spec:
   replicas: 2
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: test10_admin
+      app: test10admin
   template:
     metadata:
       labels:
-        app: test10_admin
+        app: test10admin
     spec:
       containers:
-        - name: test10_admin
+        - name: test10admin
           image: solnce52004/test10_admin:0.01
           imagePullPolicy: IfNotPresent
           resources:
