@@ -31,22 +31,22 @@ spec:
     matchLabels:
       app: test10_admin
   template:
-      metadata:
-        labels:
-          app: test10_admin
-      spec:
-        containers:
-          - name: test10_admin
-            image: solnce52004/test10_admin:0.01
-            imagePullPolicy: IfNotPresent
-            resources:
-              limits:
-                cpu: "0.2"
-                memory: "300Mi"
-              requests:
-                cpu: "0.1"
-                memory: "100Mi"
-            - ports:
-              - containerPort: 4444
-                name: http
-                protocol: TCP
+    metadata:
+      labels:
+        app: test10_admin
+    spec:
+      containers:
+        - name: test10_admin
+          image: solnce52004/test10_admin:0.01
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: "0.2"
+              memory: "300Mi"
+            requests:
+              cpu: "0.1"
+              memory: "100Mi"
+          ports:
+            - name: http
+              containerPort: 4444
+              protocol: TCP
