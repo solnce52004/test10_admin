@@ -5,7 +5,7 @@ metadata:
   labels:
     svc: test10_admin
     name: test10_admin
-#    namespace: test10_admin
+    namespace: test10-ns
 spec:
   type: NodePort
   ports:
@@ -21,7 +21,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: test10_admin
-#  namespace: test10_admin
+  namespace: test10-ns
   labels:
     app: test10_admin
 spec:
