@@ -37,8 +37,8 @@ spec:
     spec:
       containers:
         - name: test10-admin
-          image: solnce52004/test10_admin:0.01
-          imagePullPolicy: IfNotPresent
+          image: solnce52004/test10_admin:0.02
+          imagePullPolicy: Always
           resources:
             limits:
               cpu: "0.2"
