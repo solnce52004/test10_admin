@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Test10AdminApplication {
 
     public static void main(String[] args) {
+        log.info("----------- start app ----------");
         SpringApplication.run(Test10AdminApplication.class, args);
         log.info("----------- start app ----------");
     }
