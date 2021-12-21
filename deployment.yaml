@@ -48,5 +48,5 @@ spec:
               memory: "100Mi"
           ports:
             - containerPort: 4444
-              name: https
-              protocol: TCP
+              name: http
+#              protocol: TCP
