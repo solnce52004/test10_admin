@@ -10,7 +10,7 @@
 #  type: NodePort
 #  ports:
 #    - port: 4444
-#      name: metrics
+#      name: test10
 #      nodePort: 31311
 #      protocol: TCP
 #      targetPort: 4444
