@@ -25,7 +25,7 @@ metadata:
   labels:
     app: test10-admin
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
