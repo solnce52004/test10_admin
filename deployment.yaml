@@ -9,8 +9,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: metrics
-      port: 4444
+    - port: 4444
+      name: metrics
       nodePort: 31311
       protocol: TCP
       targetPort: 4444
@@ -47,6 +47,6 @@ spec:
               cpu: "0.1"
               memory: "100Mi"
           ports:
-            - name: http
-              containerPort: 4444
+            - containerPort: 4444
+              name: http
               protocol: TCP
