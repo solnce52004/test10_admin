@@ -1,6 +1,6 @@
 FROM gradle:jdk11 as builder
 COPY --chown=gradle:gradle . .
-RUN gradle build
+RUN ./gradlew build
 
 LABEL Author="solnce52004 <solnce52004@yandex.ru>"
 LABEL VERSION=0.01
