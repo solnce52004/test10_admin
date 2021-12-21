@@ -10,6 +10,7 @@ public class Test10AdminApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(Test10AdminApplication.class, args);
+        System.out.println("----------- start app ----------");
     }
 
 }
