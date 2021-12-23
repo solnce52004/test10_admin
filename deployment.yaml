@@ -20,8 +20,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test10-admin
-#  namespace: test10-ns
+  name: t10-lb
+  namespace: fleet-local
   labels:
     app: test10-admin
 spec:
@@ -30,13 +30,15 @@ spec:
   selector:
     matchLabels:
       app: test10-admin
+      workload.user.cattle.io/workloadselector: apps.deployment-fleet-local-t10-lb
   template:
     metadata:
       labels:
         app: test10-admin
+        workload.user.cattle.io/workloadselector: apps.deployment-fleet-local-t10-lb
     spec:
       containers:
-        - name: test10-admin
+        - name: container-0
           image: solnce52004/test10_admin:0.02
           imagePullPolicy: Always
           resources:
@@ -49,4 +51,4 @@ spec:
           ports:
             - containerPort: 4444
               name: https
-#              protocol: TCP
+              protocol: TCP
